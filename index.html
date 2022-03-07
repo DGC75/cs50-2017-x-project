@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The On/Off Game</title>
+    <style>
+    	div,h1 {
+    		width: 100%;
+    		margin: 2rem auto;
+    		text-align: center;
+    	}
+    </style>
+
+
+</head>
+<body onload="resizeBoard(4);"> 
+	<h1>The On/Off Game</h1>
+
+	<div>
+<span>Board size:</span>
+<select name="sizeBoard" onchange="resizeBoard(this.value)">
+  <option value="4" selected>4x4</option>
+  <option value="6">6x6</option>
+  <option value="8">8x8</option>
+  <option value="10">10x10</option>
+  <option value="50">50x50</option>
+</select>
+</div>
+<!--
+<button onclick="javascript:resizeBoard(4);">3x3</button> or
+<button onclick="javascript:resizeBoard(5);">5x5</button>
+-->
+<div>
+<span id="square" class="board"></span><br/>
+</div>
+<div>
+  <button  id="godButton" onclick="godButton()">Solve</button>
+</div>
+
+
+
+<script src="classic.js"></script> 
+
+
+
+</body>
+</html>
+
+
+
+//
+1. Form for selecting grid dimensions v
+1.a :handle the value inserted into the form v
+2.Grid generation v
+3.Lights on/off mechanism
+4. Game win
+5. register and login
+6. Leaderboard
+//
